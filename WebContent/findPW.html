@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name=viewport content="width=device-width, initial-scale=1, user-scalable=0">
+<meta charset="utf-8" />
+<link rel="stylesheet" href="jsp/css/core.css">
+<title>MySNS</title>
+<style>
+.desc {
+    float: left;
+    width: 100%;
+    color: #888;
+    font-size: 0.9em;
+}
+</style>
+</head>
+<body>
+<form action="jsp/findPW.jsp" method="post">
+    <div class="page-hdr">MySNS</div>
+    <div class="page-body">
+        <div class="section pad-24 mtop-30">
+        	<input name="id" type="text" placeholder="아이디 (이메일주소)" required>
+            <input name="name" type="text" class="mtop-10" placeholder="이름" required>
+            <input name="phonenum" type="text" class="mtop-10" placeholder="휴대폰 번호" required>
+            <input type="submit" class="mtop-20" value="비밀번호 찾기"> 
+        </div>
+        <div class="section pad-24 mtop-30">
+            <div class="desc mtop-10 mbot-10">
+            </div>
+            <a href="login.html"><div class="button">로그인하러가기</div></a>
+        </div>
+    </div>
+    <div class="page-footer">Copyright: mysns.com, 202x</div>
+</form>
+</body>
+</html>
