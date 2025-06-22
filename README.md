@@ -1,5 +1,5 @@
 # 📄 JSP 웹 프로그래밍
-**파이썬 프로그래밍 PBL 프로젝트 - 개인**  
+**웹 앱 프로그래밍 PBL 프로젝트**  
 > 프로젝트 기간: 2025년 6월 9일 ~ 2025년 6월 23일
 
 ## 🧠 과목 및 기본 정보
@@ -31,11 +31,38 @@
 
 ---
 
-## 📐 시스템 구조
+## 🧱 프로젝트 파일 구조
 
-- **서버 프로그램 구조**
-- **UI 구조**
-- **클라이언트 프로그램 구조**: WebView 기반, IP 주소 입력 가능하게 구성
+```bash
+web_project/                 # 전체 프로젝트 루트
+├── WebContent/              # 웹 리소스 및 정적/동적 HTML, JSP
+│   ├── *.html               # 로그인, 회원가입, 블로그 등록 등 UI
+│   ├── mysns.sql            # DB 초기화 SQL
+│   ├── META-INF/            # 메타 정보
+│   │   ├── MANIFEST.MF
+│   │   ├── context.xml
+│   ├── WEB-INF/             # 웹 애플리케이션 구성 파일 (web.xml 등 예상)
+│   ├── jsp/                 # JSP 동적 페이지 폴더
+│   │   ├── feedAdd.jsp
+│   │   ├── findID.jsp
+│   │   ├── findPW.jsp
+│   │   ├── login*.jsp
+│   │   ├── main.jsp
+│   │   ├── resetPW.jsp
+│   │   ├── signup.jsp
+│   │   ├── ...
+├── build/                   # 컴파일된 클래스 파일 (이클립스 자동 생성)
+│   ├── classes/
+├── src/                     # 자바 소스 코드 (Servlet, DAO 등)
+│   ├── dao/                 # DAO 및 DTO 클래스
+│   │   ├── FeedDAO.java     # 피드 데이터 처리 DAO
+│   │   ├── FeedObj.java     # 피드 객체 클래스
+│   │   ├── UserDAO.java     # 사용자 처리 DAO
+│   │   ├── UserObj.java     # 사용자 객체 클래스
+│   ├── util/                # 유틸리티 클래스
+│   │   ├── ConnectionPool.java  # DB 연결 풀
+│   │   ├── FileUtil.java        # 파일 처리 유틸
+```
 
 ---
 
